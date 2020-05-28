@@ -9,6 +9,7 @@
     $confirm_password = $_POST['confirm_password'];
 
     if ($password === $confirm_password) {
+        $password = md5($password);
         mysqli_query($connect, "INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES (NULL, '$name', '$email', '$password')");
         
         $_SESSION['msg'] = 'Вы успешно зарегистрировались!';

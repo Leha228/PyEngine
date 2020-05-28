@@ -11,14 +11,14 @@
         <div class="content__box">
             <div class="order-card animated wow zoomIn">
                 <h3 class="titled animated wow slideInLeft">Авторизация</h3>
-                <form action="#" class="flat-form">
+                <form action="inc/signin.php" method="post" class="flat-form">
                     <div class="flat-form__input-box">
                         <i class="icon f24" style="color: #eaeaea"></i>
-                        <input id="name" class="center" type="text" placeholder="Введите свой email" required>
+                        <input id="name" name='email' class="center" type="text" placeholder="Введите свой email" required>
                     </div>
                     <div class="flat-form__input-box">
                         <i class="icon f24" style="color: #eaeaea"></i>
-                        <input id="number" class="center" type="password" placeholder="Введите свой пароль" required>
+                        <input id="number" name='password' class="center" type="password" placeholder="Введите свой пароль" required>
                     </div>
                     <div class="center">
                         <br><a href="reg.php" style="color: #b8b8b8">Зарегистрироваться</a>
