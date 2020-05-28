@@ -1,8 +1,12 @@
 
 <body>
 <header class="header1">
-    <div class="container header__container" >
-        <nav class="header__nav">
+    <div class="container header__container" style="display:flex; flex-wrap: wrap; align-items: center;">
+        <div class="header__titled1" id="titled" style="flex-basis: 24%">
+            <h2 style="font-size: 42px">МЕХТА</h2>
+            <h5 class="white">Акционерное общество</h5>
+        </div>
+        <nav class="header__nav" style="flex-basis: 76%">
             <ul>
                 <li><a href="index.php">Главная</a></li>
                 <li><a href="uslugi.php">Услуги</a></li>
@@ -22,9 +26,5 @@
                 ?>
             </ul>
         </nav>
-        <div class="header__titled1" id="titled">
-            <h2>МЕХТА</h2>
-            <h5 class="white">Акционерное общество</h5>
-        </div>
     </div>
 </header>
