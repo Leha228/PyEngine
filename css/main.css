@@ -554,6 +554,7 @@ span.rotate180.euro {
 
 .white {
     color: #fff;
+    letter-spacing: 8px;
 }
 
 .f12 {
@@ -951,4 +952,9 @@ i.icon {
 
 .container {
     max-width: 1250px;
+}
+
+.header1 .white {
+    color: #fff;
+    letter-spacing: 14px;
 }
