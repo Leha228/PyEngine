@@ -5,7 +5,7 @@
     <section class="content content_grey" id="about">
     <div class="container">
         <div class="content__box">
-                <h3 align="center">Личный кабинет</h3><br>
+                <h2 align="center">Личный кабинет</h2><br>
                 <div class="order-card animated wow zoomIn">
                         <h3 class="titled animated wow slideInLeft">Отправка ответа</h3>
                         <form action="inc/signin.php" method="post" class="flat-form">
@@ -14,8 +14,7 @@
                                 <input id="name" name='text' class="center" type="text" placeholder="Введите тему вопроса" required>
                             </div>
                             <div class="flat-form__input-box">
-                                <i class="icon f24" style="color: #eaeaea"></i>
-                                <textarea id="number" name='textarea' class="center" type="messeag" placeholder="Введите свой пароль" required></textarea>
+                                <textarea rows="5" id="number" name='textarea' class="textarea" type="messeag" required></textarea>
                             </div>
                             <div class="center">
                                 <input type="submit" value="ОТПРАВИТЬ">
