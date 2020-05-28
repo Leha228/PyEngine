@@ -1,17 +1,6 @@
-<!doctype html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ОА МЕХТА</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <script src="js/wow.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/main.js"></script>
-</head>
+<?php 
+    require 'layouts/head.php';
+?>
 <body>
 <header class="header1">
     <div class="container header__container" >
@@ -123,22 +112,8 @@
         </div>
     </div>
 </section>
-<footer class="footer" id="foot">
-    <div class="container">
-        <div class="content__box content__box_not-graph">
-            
-            <nav class="header__nav">
-            <ul>
-                <li><a class="go_to" href="#usl">Главная</a></li>
-                <li><a class="go_to" href="#usl">Услуги</a></li>
-                <li><a class="go_to" href="#news">Оборудование</a></li>
-                <li><a class="go_to" href="#foot">Контакты</a></li>
-                <li><a class="go_to" href="#foot">Обратная связь</a></li>
-            </ul>
-        </nav>
-            <p class="center f12">&copy; «Акционерное общество МЕХТА», 2020</p>
-        </div>
-    </div>
-</footer>
+<?php 
+    require 'layouts/footer.php';
+?>
 </body>
 </html>
