@@ -1,6 +1,6 @@
 
 
 <div class="btn-blind" id="blind">
-    <a href="#">Для слабо видихщся</a>
+    <a href="#">Для слабовидящих</a>
 </div>
 

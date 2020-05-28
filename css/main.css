@@ -918,13 +918,21 @@ i.icon {
     color: #858585;
     text-decoration: none;
     transition: .2s;
+    z-index: 10000;
+    background-color: #f6f6f6;
+    opacity: 0.6;
 }
 
 .btn-blind a:hover{ 
     border: 1px solid #4b4b4b;
     color: #4b4b4b;
+    opacity: 1;
 }
 
 .textarea {
     width: 96%;
+}
+
+.em {
+    font-size: 2em;
 }

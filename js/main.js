@@ -1,10 +1,9 @@
 $(document).ready(function () {
 
-    const blind = querySelector('#blind')
+    const blind = document.querySelector('#blind')
     blind.onclick = function(e) {
         e.preventDefault()
-        console.log('asdf')
-        document.body.style.fontSize = '2em'
+        document.body.classList.toggle('git em')
     }
 
 
