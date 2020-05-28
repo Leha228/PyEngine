@@ -956,5 +956,6 @@ i.icon {
 
 .header1 .white {
     color: #fff;
-    letter-spacing: 14px;
+    font-size: 15px;
+    letter-spacing: 1px;
 }
