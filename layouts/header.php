@@ -11,6 +11,9 @@
                 <?php 
                     if (!empty($_SESSION['user'])) {
                         echo '<li><a href="profile.php">Личный кабинет</a></li>';
+                        if ($_SESSION['user']['admin']) {
+                            echo '<li><a href="admin/admin1.php">Админ панель</a></li>';
+                        }
                         echo '<li><a href="inc/logout.php">Выход</a></li>';
                     }
                     else {
