@@ -66,30 +66,22 @@
                     <thead class="thead-dark">
                         <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Имя</th>
                         <th scope="col">Email</th>
+                        <th scope="col">Тема</th>
                         <th scope="col">Сообщение</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        </tr>
+                    <?php
+                            require_once '../inc/connect.php';
+                            $result=mysqli_query($connect,"SELECT * FROM `vopros`"); 
+                            $th = 1;
+                            while($row=mysqli_fetch_array($result))
+                            {
+                                echo '<tr><th scope="row">'.$th.'</th><td>'.$row['email'].'</td><td>'.$row['theme'].'</td><td>'.$row['text'].'</td></tr>';
+                                $th++;
+                            }
+                       ?>
                     </tbody>
                     </table>
                 </div>

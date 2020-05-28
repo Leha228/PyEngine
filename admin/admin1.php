@@ -71,21 +71,16 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        </tr>
+                       <?php
+                            require_once '../inc/connect.php';
+                            $result=mysqli_query($connect,"SELECT * FROM `callOrder`"); 
+                            $th = 1;
+                            while($row=mysqli_fetch_array($result))
+                            {
+                                echo '<tr><th scope="row">'.$th.'</th><td>'.$row['name'].'</td><td>'.$row['phone'].'</td></tr>';
+                                $th++;
+                            }
+                       ?>
                     </tbody>
                     </table>
                     </tbody>
