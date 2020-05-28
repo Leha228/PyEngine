@@ -3,7 +3,7 @@ $(document).ready(function () {
     const blind = document.querySelector('#blind')
     blind.onclick = function(e) {
         e.preventDefault()
-        document.body.classList.toggle('git em')
+        document.body.classList.toggle('em')
     }
 
 
