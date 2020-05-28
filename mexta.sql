@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Май 28 2020 г., 09:00
+-- Время создания: Май 28 2020 г., 15:46
 -- Версия сервера: 10.4.11-MariaDB
 -- Версия PHP: 7.4.2
 
@@ -25,6 +25,18 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Структура таблицы `callorder`
+--
+
+CREATE TABLE `callorder` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `phone` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблицы `users`
 --
 
@@ -32,19 +44,40 @@ CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `password` varchar(100) NOT NULL
+  `password` varchar(100) NOT NULL,
+  `admin` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
-(1, 'Alex', 'str@mail.ru', '1234');
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `admin`) VALUES
+(4, 'Alex', 'str@mail.ru', '81dc9bdb52d04dc20036dbd8313ed055', 1),
+(5, 'Adidas', 'admin@mail.ru', '81dc9bdb52d04dc20036dbd8313ed055', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `vopros`
+--
+
+CREATE TABLE `vopros` (
+  `id` int(11) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `theme` varchar(100) NOT NULL,
+  `text` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Индексы сохранённых таблиц
 --
+
+--
+-- Индексы таблицы `callorder`
+--
+ALTER TABLE `callorder`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Индексы таблицы `users`
@@ -53,14 +86,32 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `vopros`
+--
+ALTER TABLE `vopros`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT для сохранённых таблиц
 --
+
+--
+-- AUTO_INCREMENT для таблицы `callorder`
+--
+ALTER TABLE `callorder`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT для таблицы `vopros`
+--
+ALTER TABLE `vopros`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
