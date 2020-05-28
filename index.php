@@ -18,9 +18,9 @@
         <nav class="header__nav">
             <ul>
                 <li><a class="go_to" href="#about">О нас</a></li>
-                <li><a href="uslugi.html">Услуги</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-                <li><a href="o_comp.html">Документация</a></li>
+                <li><a href="uslugi.php">Услуги</a></li>
+                <li><a href="contacts.php">Контакты</a></li>
+                <li><a href="o_comp.php">Документация</a></li>
             </ul>
             <a id="order_button" class="go_to header__order" href="#order">Заказать звонок</a>
         </nav>
@@ -135,9 +135,9 @@
             <nav class="header__nav">
             <ul>
                 <li><a class="go_to" href="#about">Главная</a></li>
-                <li><a href="uslugi.html">Услуги</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-                <li><a href="o_comp.html">Документация</a></li>
+                <li><a href="uslugi.php">Услуги</a></li>
+                <li><a href="contacts.php">Контакты</a></li>
+                <li><a href="o_comp.php">Документация</a></li>
             </ul>
         </nav>
             <p class="center f12">&copy; «Акционерное общество МЕХТА», 2020</p>
