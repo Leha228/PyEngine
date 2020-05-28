@@ -8,8 +8,12 @@
     <div class="container">
         <div class="content__box">
             <div class="order-card animated wow zoomIn">
-                <h3 class="titled animated wow slideInLeft">Авторизация</h3>
+                <h3 class="titled animated wow slideInLeft">Регистрация</h3>
                 <form action="#" class="flat-form">
+                    <div class="flat-form__input-box">
+                        <i class="icon f24" style="color: #eaeaea"></i>
+                        <input id="number" class="center" type="text" placeholder="Введите свой имя" required>
+                    </div>
                     <div class="flat-form__input-box">
                         <i class="icon f24" style="color: #eaeaea"></i>
                         <input id="name" class="center" type="text" placeholder="Введите свой email" required>
@@ -18,9 +22,13 @@
                         <i class="icon f24" style="color: #eaeaea"></i>
                         <input id="number" class="center" type="password" placeholder="Введите свой пароль" required>
                     </div>
+                    <div class="flat-form__input-box">
+                        <i class="icon f24" style="color: #eaeaea"></i>
+                        <input id="number" class="center" type="password" placeholder="повторите свой пароль" required>
+                    </div>
                     <div class="center">
-                        <br><a href="reg.php" style="color: #b8b8b8">Зарегистрироваться</a>
-                        <button id="order-button">войти</button>
+                        <br><a href="auth.php" style="color: #b8b8b8">Войти</a>
+                        <button id="order-button">зарегистрироваться</button>
                     </div>
                 </form>
             </div>
@@ -33,4 +41,3 @@
         </div>
     </div>
 </section>
-

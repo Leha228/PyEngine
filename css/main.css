@@ -62,9 +62,6 @@ body {
     margin: 0;
     font-family: Montserrat, HelveticaNeueCyr, Verdana, sans-serif;
     font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
 }
 
 div, section, header, footer, article, h1, h2, h3, h4, h5, h6 {
@@ -714,10 +711,6 @@ i.icon {
     font-size: 24px;
 }
 
-.footer {
-    margin-top: auto;
-}
-
 .footer hr {
     background: #fff;
     margin: 20px 0;
@@ -890,4 +883,24 @@ i.icon {
     border: 1px solid #000;
     margin-top: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+}
+
+.content-two {
+    padding: 15vh 0;
+}
+
+.btn-main a {
+    position: fixed;
+    top: 50px;
+    left: 100px;
+    padding: 25px;
+    border: 1px solid #858585;
+    color: #858585;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.btn-main a:hover{ 
+    border: 1px solid #4b4b4b;
+    color: #4b4b4b;
 }
