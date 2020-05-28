@@ -1,3 +1,4 @@
+
 <body>
 <header class="header1">
     <div class="container header__container" >
@@ -7,6 +8,14 @@
                 <li><a href="uslugi.php">Услуги</a></li>
                 <li><a href="contacts.php">Контакты</a></li>
                 <li><a href="o_comp.php">Документация</a></li>
+                <?php 
+                    if ($_SESSION['user']) {
+                        echo '<li><a href="profile.php">Личный кабинет</a></li>';
+                    }
+                    else {
+                        echo '<li><a href="auth.php">Вход для клиентов</a></li>';
+                    }
+                ?>
             </ul>
             <a id="order_button" class="go_to header__order" href="#order">Заказать звонок</a>
         </nav>

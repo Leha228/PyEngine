@@ -1,5 +1,4 @@
 <?php 
-    session_start();
     require 'layouts/head.php';
     require 'layouts/header.php';
     ?>
@@ -12,22 +11,14 @@
                         <form action="inc/signin.php" method="post" class="flat-form">
                             <div class="flat-form__input-box">
                                 <i class="icon f24" style="color: #eaeaea"></i>
-                                <input id="name" name='text' class="center" type="text" placeholder="Введите свой тему вопроса" required>
+                                <input id="name" name='text' class="center" type="text" placeholder="Введите тему вопроса" required>
                             </div>
                             <div class="flat-form__input-box">
                                 <i class="icon f24" style="color: #eaeaea"></i>
                                 <textarea id="number" name='textarea' class="center" type="messeag" placeholder="Введите свой пароль" required></textarea>
                             </div>
                             <div class="center">
-                                <input type="submit" value="Отправить">
-                                <p class="error_reg">
-                                    <?php
-                                        if ($_SESSION['msg']) {
-                                            echo $_SESSION['msg'];
-                                        }
-                                        unset($_SESSION['msg']);
-                                    ?>
-                                </p>
+                                <input type="submit" value="ОТПРАВИТЬ">
                             </div>
                         </form>
                 </div>

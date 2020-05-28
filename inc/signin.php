@@ -12,8 +12,8 @@
         $user = mysqli_fetch_assoc($check_user);
 
         $_SESSION['user'] = [
-            "name" => $user['name'],
-            "email" => $user['email']
+            'name' => $user['name'],
+            'email' => $user['email']
         ];
         header('Location: ../profile.php');
     }
