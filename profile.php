@@ -2,26 +2,51 @@
     session_start();
     require 'layouts/head.php';
     require 'layouts/header.php';
-?>
+    ?>
     <section class="content content_grey" id="about">
     <div class="container">
         <div class="content__box">
-            <h3 align="center">Личный кабинет</h3><br>
-            <hr style="width: 45px; margin: 30px auto">
-            <div class="container">
-        <div class="content__box content__box_not-graph">
-                <div>
-                    <br>
-                    <h5 class="upper animated wow slideInLeft"><?php $_SESSION['user']['name']?></h5><br>
-                    <br>
-                    <p class="animated wow slideInLeft"><?php $_SESSION['user']['email']?></p>
-                    <br>
+                <h3 align="center">Личный кабинет</h3><br>
+                <div class="order-card animated wow zoomIn">
+                        <h3 class="titled animated wow slideInLeft">Отправка ответа</h3>
+                        <form action="inc/signin.php" method="post" class="flat-form">
+                            <div class="flat-form__input-box">
+                                <i class="icon f24" style="color: #eaeaea"></i>
+                                <input id="name" name='text' class="center" type="text" placeholder="Введите свой email" required>
+                            </div>
+                            <div class="flat-form__input-box">
+                                <i class="icon f24" style="color: #eaeaea"></i>
+                                <textarea id="number" name='textarea' class="center" type="messeag" placeholder="Введите свой пароль" required></textarea>
+                            </div>
+                            <div class="center">
+                                <br><a href="reg.php" style="color: #b8b8b8">Зарегистрироваться</a>
+                                <input type="submit" value="ВОЙТИ">
+                                <p class="error_reg">
+                                    <?php
+                                        if ($_SESSION['msg']) {
+                                            echo $_SESSION['msg'];
+                                        }
+                                        unset($_SESSION['msg']);
+                                    ?>
+                                </p>
+                            </div>
+                        </form>
                 </div>
-        </div>
-    </div>
+                <hr style="width: 45px; margin: 30px auto">
+                <div class="container">
+                <div class="content__box content__box_not-graph">
+                        <div>
+                            <br>
+                            <h5 class="upper animated wow slideInLeft"><?php $_SESSION['user']['name']?></h5><br>
+                            <br>
+                            <p class="animated wow slideInLeft"><?php $_SESSION['user']['email']?></p>
+                            <br>
+                        </div>
+                </div>
+                </div>
             </div>
-        </div>
-        <div class="graph graph_horizontal-reverse graph_white">
+        
+            <div class="graph graph_horizontal-reverse graph_white">
             <div class="animated wow fadeInUpBig" data-wow-delay="1.2s"></div>
             <div class="animated wow fadeInUpBig" data-wow-delay=".9s"></div>
             <div class="animated wow fadeInUpBig" data-wow-delay=".6s"></div>
