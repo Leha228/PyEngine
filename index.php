@@ -106,7 +106,7 @@
                         <form action="inc/callOrder.php" method="post" class="flat-form">
                             <div class="flat-form__input-box">
                                 <i class="icon f24" style="color: #eaeaea"></i>
-                                <input id="name" anme="name" class="center" type="text" placeholder="Введите свое имя" required>
+                                <input id="name" name="name" class="center" type="text" placeholder="Введите свое имя" required>
                             </div>
                             <div class="flat-form__input-box">
                                 <i class="icon f24" style="color: #eaeaea"></i>

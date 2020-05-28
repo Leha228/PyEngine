@@ -9,4 +9,5 @@
     $_SESSION['msg'] = 'Ожидайте, вам скоро позвонят!';
 
     header('Location: ../index.php#order');
+
 ?>
