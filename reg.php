@@ -34,7 +34,7 @@
                         <input type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ">
                         <p class="error_reg">
                             <?php
-                                if ($_SESSION['msg']) {
+                                if (!empty($_SESSION['msg'])) {
                                     echo $_SESSION['msg'];
                                 }
                                 unset($_SESSION['msg']);

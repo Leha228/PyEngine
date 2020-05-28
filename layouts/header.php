@@ -9,7 +9,7 @@
                 <li><a href="contacts.php">Контакты</a></li>
                 <li><a href="o_comp.php">Документация</a></li>
                 <?php 
-                    if ($_SESSION['user']) {
+                    if (!empty($_SESSION['user'])) {
                         echo '<li><a href="profile.php">Личный кабинет</a></li>';
                         echo '<li><a href="inc/logout.php">Выход</a></li>';
                     }
