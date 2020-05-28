@@ -1,2 +1,0 @@
-# PyEngine
-Python Engine
