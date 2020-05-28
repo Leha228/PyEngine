@@ -12,6 +12,7 @@
         $user = mysqli_fetch_assoc($check_user);
 
         $_SESSION['user'] = [
+            'id' => $user['id'],
             'name' => $user['name'],
             'email' => $user['email']
         ];
