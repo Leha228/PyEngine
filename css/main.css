@@ -62,6 +62,9 @@ body {
     margin: 0;
     font-family: Montserrat, HelveticaNeueCyr, Verdana, sans-serif;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 div, section, header, footer, article, h1, h2, h3, h4, h5, h6 {
@@ -186,7 +189,7 @@ hr {
 
 .header__nav li {
     display: block;
-    margin-right: 85px;
+    margin-right: 32px;
 }
 
 .header__nav a {
@@ -709,6 +712,10 @@ i.icon {
 
 .f24 {
     font-size: 24px;
+}
+
+.footer {
+    margin-top: auto;
 }
 
 .footer hr {
