@@ -12,15 +12,14 @@
                         <form action="inc/signin.php" method="post" class="flat-form">
                             <div class="flat-form__input-box">
                                 <i class="icon f24" style="color: #eaeaea"></i>
-                                <input id="name" name='text' class="center" type="text" placeholder="Введите свой email" required>
+                                <input id="name" name='text' class="center" type="text" placeholder="Введите свой тему вопроса" required>
                             </div>
                             <div class="flat-form__input-box">
                                 <i class="icon f24" style="color: #eaeaea"></i>
                                 <textarea id="number" name='textarea' class="center" type="messeag" placeholder="Введите свой пароль" required></textarea>
                             </div>
                             <div class="center">
-                                <br><a href="reg.php" style="color: #b8b8b8">Зарегистрироваться</a>
-                                <input type="submit" value="ВОЙТИ">
+                                <input type="submit" value="Отправить">
                                 <p class="error_reg">
                                     <?php
                                         if ($_SESSION['msg']) {
