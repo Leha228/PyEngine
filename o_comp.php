@@ -12,7 +12,7 @@
         <div class="content__box content__box_not-graph">
                 <div class="img__content" style="display: flex; justify-content: space-between;">
                     <div>
-                        <img src="img/about.png">
+                        <img src="img/7.png">
                     </div>
                     <div>
                         <br><br>
@@ -66,7 +66,7 @@
                         <p class="animated wow slideInLeft">Фонд ФСС (27.08.2019)</p>
                     </div>
                     <div>
-                        <img src="img/about.png">
+                        <img src="img/6.png">
                     </div>
                 </div>
             </div>
