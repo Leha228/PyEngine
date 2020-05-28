@@ -7,10 +7,11 @@
     $email = $_POST['email'];
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
+    $null = 0;
 
     if ($password === $confirm_password) {
         $password = md5($password);
-        mysqli_query($connect, "INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES (NULL, '$name', '$email', '$password')");
+        mysqli_query($connect, "INSERT INTO `users` (`id`, `name`, `email`, `password`,`admin`) VALUES (NULL, '$name', '$email', '$password','$null')");
         
         $_SESSION['msg'] = 'Вы успешно зарегистрировались!';
         header('Location: ../auth.php');

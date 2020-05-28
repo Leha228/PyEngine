@@ -1,12 +1,20 @@
 <?php 
     require 'layouts/head.php';
+    if (empty($_SESSION['user'])) {
+        die("Not Found");
+    }
     require 'layouts/header.php';
 ?>
     <section class="content content_grey" id="about">
     <div class="container">
         <div class="content__box">
                 <h2 align="center">Личный кабинет</h2><br>
-                
+
+                <?php 
+                    if ($_SESSION['user']['admin']) {
+                        echo "<a href='admin/admin1.php'>Админка</a>";
+                    }
+                ?>
                 <div class="order-card animated wow zoomIn">
                         <h3 class="titled animated wow slideInLeft">Задать вопрос</h3>
                         <form action="inc/vopros.php" method="post" class="flat-form">

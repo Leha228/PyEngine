@@ -1,5 +1,4 @@
 <?php 
-    session_start();
     require 'layouts/head.php'; 
 ?>
 
