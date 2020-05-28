@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Bootstrap 4 Navbar - Как создать вертикальное основное меню для сайта</title>
+        <title>Admin</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
         <style>
             @media (min-width: 768px) {
                 .navbar-container {
@@ -37,17 +37,13 @@
                 }
             }
         </style>
-
     </head>
-
     <body>
-
-
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 col-lg-3 navbar-container bg-light">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="#">Navbar</a>
+                        <a class="navbar-brand" href="../index.php">Назад</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -56,19 +52,10 @@
                             <!-- Вертикальное меню -->
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#link-1">Ссылка 1</a>
+                                    <a class="nav-link" href="admin1.php">Данные о звонках</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#link-2">Ссылка 2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#link-3">Ссылка 3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#link-4">Ссылка 4</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#link-5">Ссылка 5</a>
+                                    <a class="nav-link" href="admin2.php">Вопрос-ответ</a>
                                 </li>
                             </ul>
                         </div>
@@ -80,8 +67,7 @@
                         <tr>
                         <th scope="col">#</th>
                         <th scope="col">Имя</th>
-                        <th scope="col">Фамилия</th>
-                        <th scope="col">Username</th>
+                        <th scope="col">Номер</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -89,51 +75,19 @@
                         <th scope="row">1</th>
                         <td>Mark</td>
                         <td>Otto</td>
-                        <td>@mdo</td>
                         </tr>
                         <tr>
                         <th scope="row">2</th>
                         <td>Jacob</td>
                         <td>Thornton</td>
-                        <td>@fat</td>
                         </tr>
                         <tr>
                         <th scope="row">3</th>
                         <td>Larry</td>
                         <td>the Bird</td>
-                        <td>@twitter</td>
                         </tr>
                     </tbody>
                     </table>
-
-                    <table class="table">
-                    <thead class="thead-light">
-                        <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Имя</th>
-                        <th scope="col">Фамилия</th>
-                        <th scope="col">Username</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        </tr>
                     </tbody>
                 </table>
                 </div>
