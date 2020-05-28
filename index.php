@@ -103,18 +103,26 @@
                     <div class="order-card animated wow zoomIn">
                         <a href="tel:89228644256" class="order-card__call animated wow zoomIn" data-wow-delay=".6s"></a>
                         <h3 class="titled animated wow slideInLeft">Заказать<br>звонок</h3>
-                        <form action="#" class="flat-form">
+                        <form action="inc/callOrder.php" method="post" class="flat-form">
                             <div class="flat-form__input-box">
                                 <i class="icon f24" style="color: #eaeaea"></i>
-                                <input id="name" class="center" type="text" placeholder="Введите свое имя" required>
+                                <input id="name" anme="name" class="center" type="text" placeholder="Введите свое имя" required>
                             </div>
                             <div class="flat-form__input-box">
                                 <i class="icon f24" style="color: #eaeaea"></i>
-                                <input id="number" class="center" type="text" placeholder="Введите свой номер" required>
+                                <input id="number" name="phone" class="center" type="text" placeholder="Введите свой номер" required>
                             </div>
                             <div class="center">
                                 <input type="checkbox" id="pol-input"> <span class="upper f12" id="politic">Политика конфиденциальности</span>
-                                <button id="order-button">Заказать</button>
+                                <button type='submit'>Заказать</button>
+                                <p class="error_reg">
+                                <?php
+                                    if (!empty($_SESSION['msg'])) {
+                                        echo $_SESSION['msg'];
+                                    }
+                                    unset($_SESSION['msg']);
+                                ?>
+                            </p>
                             </div>
                         </form>
             <hr style="width: 130px;">
