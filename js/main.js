@@ -1,9 +1,12 @@
 $(document).ready(function () {
 
     const blind = document.querySelector('#blind')
+    const call = document.querySelector('#order_button')
+    console.log(call)
     blind.onclick = function(e) {
         e.preventDefault()
         document.body.classList.toggle('em')
+        call.classList.toggle('d-none')
     }
 
 
