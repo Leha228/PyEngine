@@ -97,6 +97,7 @@
     </div>
 </section>
 <?php 
+    require 'layouts/blind.php';
     require 'layouts/footer.php';
 ?>
 </body>
