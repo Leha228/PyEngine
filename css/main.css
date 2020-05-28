@@ -134,7 +134,7 @@ hr {
 .header1 {
     padding: 1rem;
     background: #b6b19a url(../img/head-bg.jpg) bottom center / cover;
-    height: 100vh;
+
     position: relative;
     z-index: 999;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
@@ -940,4 +940,16 @@ i.icon {
 
 .d-none {
     display: none !important;
+}
+
+.header1 .header__nav li{
+    padding: 5px 0;
+}
+
+.header1 .header__nav ul{
+    justify-content: flex-end;
+}
+
+.container {
+    max-width: 1250px;
 }
