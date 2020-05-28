@@ -1,7 +1,7 @@
 <?php 
     require 'layouts/head.php';
     require 'layouts/header.php';
-    ?>
+?>
     <section class="content content_grey" id="about">
     <div class="container">
         <div class="content__box">

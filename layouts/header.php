@@ -11,13 +11,13 @@
                 <?php 
                     if ($_SESSION['user']) {
                         echo '<li><a href="profile.php">Личный кабинет</a></li>';
+                        echo '<li><a href="inc/logout.php">Выход</a></li>';
                     }
                     else {
                         echo '<li><a href="auth.php">Вход для клиентов</a></li>';
                     }
                 ?>
             </ul>
-            <a id="order_button" class="go_to header__order" href="#order">Заказать звонок</a>
         </nav>
         <div class="header__titled1" id="titled">
             <h2>МЕХТА</h2>
