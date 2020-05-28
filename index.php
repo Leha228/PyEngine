@@ -3,6 +3,7 @@
 ?>
 <body>
 <header class="header">
+<div class="div" style="overflow:hidden">
     <div class="container header__container" id="header">
         <nav class="header__nav">
             <ul>
@@ -21,6 +22,7 @@
         <p class="header__text">
             Наши возможности для вашего успешного бизнеса!.
         </p>
+    </div>
     </div>
 </header>
 <section class="content">
