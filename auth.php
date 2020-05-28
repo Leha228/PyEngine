@@ -1,7 +1,9 @@
-<? require('layouts/head.php') ?>
+<?php 
+    require 'layouts/head.php';
+?>
 
 <div class="btn-main">
-    <a href="/">Назад</a>
+    <a href="index.php">Назад</a>
 </div>
 
 <section class="content content-two" id="order">
@@ -20,7 +22,15 @@
                     </div>
                     <div class="center">
                         <br><a href="reg.php" style="color: #b8b8b8">Зарегистрироваться</a>
-                        <button id="order-button">войти</button>
+                        <input type="submit" value="ВОЙТИ">
+                        <p class="error_reg">
+                            <?php
+                                if ($_SESSION['msg']) {
+                                    echo $_SESSION['msg'];
+                                }
+                                unset($_SESSION['msg']);
+                            ?>
+                        </p>
                     </div>
                 </form>
             </div>
