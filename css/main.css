@@ -908,6 +908,23 @@ i.icon {
     color: #4b4b4b;
 }
 
+
+.btn-blind a {
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    padding: 25px;
+    border: 1px solid #858585;
+    color: #858585;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.btn-blind a:hover{ 
+    border: 1px solid #4b4b4b;
+    color: #4b4b4b;
+}
+
 .textarea {
     width: 96%;
 }
